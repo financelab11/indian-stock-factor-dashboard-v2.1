@@ -332,13 +332,12 @@ export default function EdgePage() {
             <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
               <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-5">Weight Distribution</div>
               <div className="flex flex-col gap-4">
-                {[
-                  { factor: 'Value', weight: 25, color: 'bg-blue-500', desc: 'Valuation multiples & yield' },
-                  { factor: 'Quality', weight: 25, color: 'bg-emerald-500', desc: 'Returns & balance sheet' },
-                  { factor: 'Growth', weight: 20, color: 'bg-amber-500', desc: 'Revenue & earnings trajectory' },
-                  { factor: 'Momentum', weight: 20, color: 'bg-purple-500', desc: 'Price strength & relative return' },
-                  { factor: 'Stability', weight: 10, color: 'bg-rose-500', desc: 'Volatility & drawdown control' },
-                ].map(({ factor, weight, color, desc }) => (
+                  {[
+                    { factor: 'Value', weight: 30, color: 'bg-blue-500', desc: 'Valuation multiples & yield' },
+                    { factor: 'Quality', weight: 30, color: 'bg-emerald-500', desc: 'Returns & balance sheet' },
+                    { factor: 'Growth', weight: 20, color: 'bg-amber-500', desc: 'Revenue & earnings trajectory' },
+                    { factor: 'Momentum', weight: 20, color: 'bg-purple-500', desc: 'Price strength & relative return' },
+                  ].map(({ factor, weight, color, desc }) => (
                   <div key={factor}>
                     <div className="flex items-center justify-between mb-1">
                       <div>
