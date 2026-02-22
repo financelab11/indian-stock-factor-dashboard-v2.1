@@ -127,21 +127,14 @@ export default function EdgePage() {
       parameters: ['Revenue CAGR (3Y)', 'EBITDA Growth', 'EPS Growth (3Y)', 'Operating Leverage'],
       explanation: 'Growth stocks that are also cheap and high-quality are the holy grail. This factor captures sustainable business expansion, not speculative hype.',
     },
-    {
-      number: '04', name: 'Momentum', tagline: 'Measures price strength and relative performance',
-      color: 'border-purple-100',
-      icon: <Activity className="w-4 h-4 text-purple-600" />,
-      parameters: ['12M Price Return', 'Relative Strength', '6M Return', 'Price vs 52W High'],
-      explanation: 'Momentum is one of the most statistically robust factors globally. Winners tend to keep winning over 6–12 month horizons. We capture this using trailing returns and relative strength.',
-    },
-    {
-      number: '05', name: 'Stability', tagline: 'Measures risk-adjusted predictability',
-      color: 'border-rose-100',
-      icon: <Shield className="w-4 h-4 text-rose-600" />,
-      parameters: ['Beta', 'Volatility (1Y)', 'Max Drawdown', 'Earnings Variability'],
-      explanation: 'Low-volatility stocks have historically outperformed on a risk-adjusted basis. Stability rewards predictable businesses that don\'t swing wildly — reducing behavioral risk for investors.',
-    },
-  ]
+      {
+        number: '04', name: 'Momentum', tagline: 'Measures price strength and relative performance',
+        color: 'border-purple-100',
+        icon: <Activity className="w-4 h-4 text-purple-600" />,
+        parameters: ['12M Price Return', 'Relative Strength', '6M Return', 'Price vs 52W High'],
+        explanation: 'Momentum is one of the most statistically robust factors globally. Winners tend to keep winning over 6–12 month horizons. We capture this using trailing returns and relative strength.',
+      },
+    ]
 
   const backtestTable = [
     { year: 'FY11 → FY12', portfolioReturn: -31, note: 'Post-2008 recovery setback' },
