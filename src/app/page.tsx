@@ -279,12 +279,11 @@ export default function LandingPage() {
             <div className="text-xs font-semibold text-emerald-400 uppercase tracking-widest mb-5">Factor Weighting</div>
             <div className="flex flex-col gap-3.5">
               {[
-                { factor: 'Value', weight: 25, barW: 'w-[100%]', color: 'bg-blue-400' },
-                { factor: 'Quality', weight: 25, barW: 'w-[100%]', color: 'bg-emerald-400' },
-                { factor: 'Growth', weight: 20, barW: 'w-[80%]', color: 'bg-amber-400' },
-                { factor: 'Momentum', weight: 20, barW: 'w-[80%]', color: 'bg-purple-400' },
-                { factor: 'Stability', weight: 10, barW: 'w-[40%]', color: 'bg-rose-400' },
-              ].map(({ factor, weight, barW, color }) => (
+                  { factor: 'Value', weight: 30, barW: 'w-[100%]', color: 'bg-blue-400' },
+                  { factor: 'Quality', weight: 30, barW: 'w-[100%]', color: 'bg-emerald-400' },
+                  { factor: 'Growth', weight: 20, barW: 'w-[67%]', color: 'bg-amber-400' },
+                  { factor: 'Momentum', weight: 20, barW: 'w-[67%]', color: 'bg-purple-400' },
+                ].map(({ factor, weight, barW, color }) => (
                 <div key={factor} className="flex items-center gap-3">
                   <div className="text-xs w-20 text-slate-300 font-medium">{factor}</div>
                   <div className="flex-1 bg-white/10 rounded-full h-2 overflow-hidden">
