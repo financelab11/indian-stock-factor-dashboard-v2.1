@@ -214,7 +214,7 @@ export default function EdgePage() {
               Multi-factor investing combines multiple independent drivers of stock returns into a single composite signal. Instead of betting on one signal, we blend statistically validated factors — each capturing a different dimension of a stock&apos;s quality.
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              No single factor works all the time. But blending uncorrelated factors — Value, Quality, Growth, Momentum, and Stability — creates a robust, all-weather approach that outperforms over full market cycles.
+              No single factor works all the time. But blending uncorrelated factors — Value, Quality, Growth, and Momentum — creates a robust, all-weather approach that outperforms over full market cycles.
             </p>
           </div>
 
