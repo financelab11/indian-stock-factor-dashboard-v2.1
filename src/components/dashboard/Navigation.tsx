@@ -81,10 +81,10 @@ export function TopNav() {
   return (
     <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 h-12 md:h-14 flex items-center gap-2.5">
-          <Link href="/" className="flex items-center gap-2 shrink-0 hover:opacity-80 transition-opacity">
-            <Image src="/logo.svg" alt="Factor Lens" width={32} height={32} className="w-7 h-7 md:w-8 md:h-8" />
-            <span className="font-bold text-sm leading-tight tracking-tight">Factor Lens</span>
-          </Link>
+            <Link href="/" className="flex items-center gap-2 shrink-0 hover:opacity-80 transition-opacity">
+              <FactorLensLogo className="w-7 h-7 md:w-8 md:h-8" />
+              <span className="font-bold text-sm leading-tight tracking-tight">Factor Lens</span>
+            </Link>
 
         {/* Desktop nav tabs */}
         <nav className="hidden md:flex items-center gap-0.5 ml-6">
