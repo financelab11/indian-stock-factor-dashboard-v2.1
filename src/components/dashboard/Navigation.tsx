@@ -53,15 +53,10 @@ export function TopNav() {
   return (
     <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 h-12 md:h-14 flex items-center gap-2.5">
-        <Link href="/" className="flex items-center gap-2 shrink-0 hover:opacity-80 transition-opacity">
-          <div className="w-6 h-6 md:w-7 md:h-7 rounded-lg bg-primary flex items-center justify-center">
-            <TrendingUp className="w-3 h-3 md:w-3.5 md:h-3.5 text-primary-foreground" />
-          </div>
-          <div className="flex items-baseline gap-1.5 min-w-0">
-            <span className="font-bold text-sm leading-tight">Factor Lens</span>
-            <span className="text-xs text-muted-foreground hidden sm:inline">Indian Equities</span>
-          </div>
-        </Link>
+          <Link href="/" className="flex items-center gap-2 shrink-0 hover:opacity-80 transition-opacity">
+            <Image src="/logo.svg" alt="Factor Lens" width={32} height={32} className="w-7 h-7 md:w-8 md:h-8" />
+            <span className="font-bold text-sm leading-tight tracking-tight">Factor Lens</span>
+          </Link>
 
         {/* Desktop nav tabs */}
         <nav className="hidden md:flex items-center gap-0.5 ml-6">
