@@ -389,7 +389,7 @@ export default function EdgePage() {
             <SectionLabel>Worked Example</SectionLabel>
             <SectionHeading>Scoring a Real Stock</SectionHeading>
             <p className="text-sm text-muted-foreground leading-relaxed mt-4 mb-6">
-              Here&apos;s how a typical high-quality Indian midcap might score across all five factors, and how the weighted final score is computed.
+              Here&apos;s how a typical high-quality Indian midcap might score across all four factors, and how the weighted final score is computed.
             </p>
             <div className="rounded-2xl border border-border bg-card shadow-sm overflow-hidden">
               <div className="px-4 py-3 bg-muted/50 border-b border-border">
