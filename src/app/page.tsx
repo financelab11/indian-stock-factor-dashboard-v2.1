@@ -234,7 +234,7 @@ export default function LandingPage() {
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
             {[
               { step: '01', title: 'Cross-Sectional Normalization', desc: 'Each metric is ranked percentile-style across all stocks, then scaled to 0–10. Eliminates sector and size bias.' },
-              { step: '02', title: 'Factor Aggregation', desc: '5 factors are computed as weighted averages of underlying parameters — giving a holistic view of each stock.' },
+                { step: '02', title: 'Factor Aggregation', desc: '4 factors are computed as weighted averages of underlying parameters — giving a holistic view of each stock.' },
               { step: '03', title: 'Annual Rebalancing', desc: 'Scores are computed every FY. Top-N stocks selected at year-end. Equal-weighted portfolio held for 12 months.' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="rounded-xl border border-border bg-card p-4 shadow-sm">
