@@ -179,7 +179,8 @@ export default function LandingPage() {
             <div className="flex flex-wrap justify-center items-center gap-4 mt-2 text-xs text-slate-400">
               <span className="flex items-center gap-1.5"><CheckCircle className="w-3.5 h-3.5 text-emerald-400" />NSE &amp; BSE Coverage</span>
               <span className="flex items-center gap-1.5"><CheckCircle className="w-3.5 h-3.5 text-emerald-400" />14+ Years Backtest</span>
-              <span className="flex items-center gap-1.5"><CheckCircle className="w-3.5 h-3.5 text-emerald-400" />4-Factor Model</span>
+                <span className="flex items-center gap-1.5"><CheckCircle className="w-3.5 h-3.5 text-emerald-400" />4-Factor Model</span>
+
             </div>
         </div>
       </section>
