@@ -17,6 +17,10 @@ export const metadata: Metadata = {
     "indian stock market", "factor investing", "multi-factor model", "nse", "bse",
     "stock screening", "backtesting", "quant investing", "value investing india",
   ],
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
 };
 
 export const viewport: Viewport = {
