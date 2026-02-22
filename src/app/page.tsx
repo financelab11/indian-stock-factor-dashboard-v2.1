@@ -201,7 +201,7 @@ export default function LandingPage() {
             <FeatureCard
               icon={<Layers className="w-5 h-5" />}
               title="Compare Factor Strength"
-              desc="Visualize Growth, Quality, Value, and Momentum scores across years. Identify trend and factor leadership at a glance."
+              desc="Visualize Value, Quality, Growth, and Momentum scores across years. Identify trend and factor leadership at a glance."
             />
             <FeatureCard
               icon={<FlaskConical className="w-5 h-5" />}
