@@ -233,8 +233,8 @@ export default function EdgePage() {
       <section className="px-4 sm:px-8 md:px-16 py-16 bg-muted/40 border-y border-border">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
-            <SectionLabel>The Five Factors</SectionLabel>
-            <SectionHeading>Our Factor Architecture</SectionHeading>
+              <SectionLabel>The Four Factors</SectionLabel>
+              <SectionHeading>Our Factor Architecture</SectionHeading>
             <p className="text-sm text-muted-foreground mt-3 max-w-xl mx-auto">
               Each factor is designed to capture a distinct, academically validated return premium.
             </p>
