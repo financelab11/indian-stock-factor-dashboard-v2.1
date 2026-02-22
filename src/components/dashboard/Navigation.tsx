@@ -1,8 +1,36 @@
 'use client'
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { BarChart2, Home, FlaskConical, Zap } from 'lucide-react'
+
+function FactorLensLogo({ className }: { className?: string }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" className={className}>
+      <ellipse cx="20" cy="20" rx="18" ry="13" fill="url(#fl-lg1)"/>
+      <ellipse cx="20" cy="20" rx="18" ry="13" stroke="url(#fl-lg2)" strokeWidth="1.5" fill="none"/>
+      <rect x="9" y="22" width="4" height="5" rx="1" fill="white" opacity="0.55"/>
+      <rect x="15" y="18" width="4" height="9" rx="1" fill="white" opacity="0.75"/>
+      <rect x="21" y="14" width="4" height="13" rx="1" fill="white" opacity="0.9"/>
+      <rect x="27" y="11" width="4" height="16" rx="1" fill="white"/>
+      <polyline points="11,21 17,17 23,13 29,10" stroke="url(#fl-lg3)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+      <circle cx="29" cy="10" r="2" fill="#34d399"/>
+      <defs>
+        <linearGradient id="fl-lg1" x1="2" y1="7" x2="38" y2="33" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stopColor="#0f172a"/>
+          <stop offset="100%" stopColor="#064e3b"/>
+        </linearGradient>
+        <linearGradient id="fl-lg2" x1="2" y1="7" x2="38" y2="33" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stopColor="#34d399" stopOpacity="0.8"/>
+          <stop offset="100%" stopColor="#22d3ee" stopOpacity="0.4"/>
+        </linearGradient>
+        <linearGradient id="fl-lg3" x1="11" y1="21" x2="29" y2="10" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stopColor="#6ee7b7"/>
+          <stop offset="100%" stopColor="#34d399"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  )
+}
 
 const TABS = [
   { href: '/', label: 'Home', icon: Home, exactMatch: true },
