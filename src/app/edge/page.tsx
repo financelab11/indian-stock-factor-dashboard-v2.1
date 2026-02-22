@@ -220,12 +220,11 @@ export default function EdgePage() {
 
           <div className="grid grid-cols-1 gap-3">
             {[
-              { factor: 'Value', desc: 'Buy cheap. Mean reversion is powerful.', color: 'bg-blue-50 border-blue-100 text-blue-700' },
-              { factor: 'Quality', desc: 'Own businesses that compound capital well.', color: 'bg-emerald-50 border-emerald-100 text-emerald-700' },
-              { factor: 'Growth', desc: 'Follow earnings expansion trajectories.', color: 'bg-amber-50 border-amber-100 text-amber-700' },
-              { factor: 'Momentum', desc: 'Ride price strength. Trends persist.', color: 'bg-purple-50 border-purple-100 text-purple-700' },
-              { factor: 'Stability', desc: 'Lower risk improves risk-adjusted returns.', color: 'bg-rose-50 border-rose-100 text-rose-700' },
-            ].map(({ factor, desc, color }) => (
+                { factor: 'Value', desc: 'Buy cheap. Mean reversion is powerful.', color: 'bg-blue-50 border-blue-100 text-blue-700' },
+                { factor: 'Quality', desc: 'Own businesses that compound capital well.', color: 'bg-emerald-50 border-emerald-100 text-emerald-700' },
+                { factor: 'Growth', desc: 'Follow earnings expansion trajectories.', color: 'bg-amber-50 border-amber-100 text-amber-700' },
+                { factor: 'Momentum', desc: 'Ride price strength. Trends persist.', color: 'bg-purple-50 border-purple-100 text-purple-700' },
+              ].map(({ factor, desc, color }) => (
               <div key={factor} className={`rounded-xl border px-4 py-3 flex items-center gap-3 ${color}`}>
                 <CheckCircle className="w-4 h-4 shrink-0" />
                 <div>
