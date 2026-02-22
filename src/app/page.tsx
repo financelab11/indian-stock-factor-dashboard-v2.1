@@ -196,7 +196,7 @@ export default function LandingPage() {
             <FeatureCard
               icon={<Award className="w-5 h-5" />}
               title="Rank Stocks Objectively"
-              desc="Every stock scored 0–100 using normalized financial parameters across 5 institutional-grade factors. No guesswork. Pure data."
+              desc="Every stock scored 0–100 using normalized financial parameters across 4 institutional-grade factors. No guesswork. Pure data."
             />
             <FeatureCard
               icon={<Layers className="w-5 h-5" />}
