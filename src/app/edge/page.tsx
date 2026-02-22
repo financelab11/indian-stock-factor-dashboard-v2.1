@@ -181,7 +181,7 @@ export default function EdgePage() {
           </h1>
 
           <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
-            Our multi-factor model transforms raw financial metrics into actionable intelligence — combining Value, Quality, Growth, Momentum, and Stability into a single, transparent score.
+            Our multi-factor model transforms raw financial metrics into actionable intelligence — combining Value, Quality, Growth, and Momentum into a single, transparent score.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 mt-2 justify-center">
