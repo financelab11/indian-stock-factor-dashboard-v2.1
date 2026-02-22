@@ -1,7 +1,8 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { BarChart2, Home, FlaskConical, Zap, TrendingUp } from 'lucide-react'
+import { BarChart2, Home, FlaskConical, Zap } from 'lucide-react'
 
 const TABS = [
   { href: '/', label: 'Home', icon: Home, exactMatch: true },
