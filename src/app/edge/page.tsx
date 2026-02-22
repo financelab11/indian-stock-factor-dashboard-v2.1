@@ -144,12 +144,11 @@ export default function EdgePage() {
   ]
 
   const exampleFactors = [
-    { factor: 'Value', score: 7.2, weight: 25 },
-    { factor: 'Quality', score: 8.1, weight: 25 },
-    { factor: 'Growth', score: 6.5, weight: 20 },
-    { factor: 'Momentum', score: 5.9, weight: 20 },
-    { factor: 'Stability', score: 7.0, weight: 10 },
-  ]
+      { factor: 'Value', score: 7.2, weight: 30 },
+      { factor: 'Quality', score: 8.1, weight: 30 },
+      { factor: 'Growth', score: 6.5, weight: 20 },
+      { factor: 'Momentum', score: 5.9, weight: 20 },
+    ]
   const finalScore = exampleFactors.reduce((sum, f) => sum + (f.score * f.weight) / 100, 0)
 
   return (
