@@ -347,7 +347,7 @@ export default function EdgePage() {
                       <span className="text-sm font-bold">{weight}%</span>
                     </div>
                     <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
-                      <div className={`${color} h-2 rounded-full`} style={{ width: `${weight * 4}%` }} />
+                      <div className={`${color} h-2 rounded-full`} style={{ width: `${(weight / 30) * 100}%` }} />
                     </div>
                   </div>
                 ))}
