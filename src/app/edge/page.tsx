@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import {
   TrendingUp, BarChart2, FlaskConical, ArrowRight,
   Layers, Target, Award, Zap, CheckCircle,
-  ChevronRight, BarChart, Activity, Shield, TrendingDown,
+  ChevronRight, BarChart, Activity,
 } from 'lucide-react'
 
 // ── Types ─────────────────────────────────────────────────────────────────────
