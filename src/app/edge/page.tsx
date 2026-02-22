@@ -372,10 +372,9 @@ export default function EdgePage() {
               <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
                 <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Why These Weights?</div>
                 <ul className="flex flex-col gap-2 text-xs text-muted-foreground">
-                  <li className="flex gap-2"><ChevronRight className="w-3 h-3 text-primary shrink-0 mt-0.5" />Value &amp; Quality equally weighted — the foundation of sound investing</li>
-                  <li className="flex gap-2"><ChevronRight className="w-3 h-3 text-primary shrink-0 mt-0.5" />Growth &amp; Momentum capture forward-looking signals</li>
-                  <li className="flex gap-2"><ChevronRight className="w-3 h-3 text-primary shrink-0 mt-0.5" />Stability as a risk dampener — less is sometimes more</li>
-                  <li className="flex gap-2"><ChevronRight className="w-3 h-3 text-primary shrink-0 mt-0.5" />Weights validated against Indian equity historical data</li>
+                    <li className="flex gap-2"><ChevronRight className="w-3 h-3 text-primary shrink-0 mt-0.5" />Value &amp; Quality equally weighted at 30% — the foundation of sound investing</li>
+                    <li className="flex gap-2"><ChevronRight className="w-3 h-3 text-primary shrink-0 mt-0.5" />Growth &amp; Momentum capture forward-looking signals</li>
+                    <li className="flex gap-2"><ChevronRight className="w-3 h-3 text-primary shrink-0 mt-0.5" />Weights validated against Indian equity historical data</li>
                 </ul>
               </div>
             </div>
