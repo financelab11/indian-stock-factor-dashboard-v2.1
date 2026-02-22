@@ -357,15 +357,14 @@ export default function EdgePage() {
             <div className="flex flex-col gap-4">
               <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
                 <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">The Formula</div>
-                <div className="rounded-xl bg-muted/60 p-4 font-mono text-sm leading-relaxed">
-                  <div className="text-muted-foreground text-xs mb-2">// Final Score computation</div>
-                  Final Score =<br />
-                  &nbsp;&nbsp;(Value × 0.25) +<br />
-                  &nbsp;&nbsp;(Quality × 0.25) +<br />
-                  &nbsp;&nbsp;(Growth × 0.20) +<br />
-                  &nbsp;&nbsp;(Momentum × 0.20) +<br />
-                  &nbsp;&nbsp;(Stability × 0.10)
-                </div>
+                  <div className="rounded-xl bg-muted/60 p-4 font-mono text-sm leading-relaxed">
+                    <div className="text-muted-foreground text-xs mb-2">// Final Score computation</div>
+                    Final Score =<br />
+                    &nbsp;&nbsp;(Value × 0.30) +<br />
+                    &nbsp;&nbsp;(Quality × 0.30) +<br />
+                    &nbsp;&nbsp;(Growth × 0.20) +<br />
+                    &nbsp;&nbsp;(Momentum × 0.20)
+                  </div>
                 <p className="text-xs text-muted-foreground mt-3">
                   Each factor score is already normalized to 0–10. The final score is then scaled to 0–100 for readability.
                 </p>
