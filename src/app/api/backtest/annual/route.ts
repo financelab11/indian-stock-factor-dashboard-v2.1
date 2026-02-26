@@ -44,8 +44,8 @@ export async function GET(req: NextRequest) {
           .from('portfolio_selection')
           .select('company_id, score, next_year_return, companies(ticker, name)')
           .eq('selection_year', bt.selection_year)
+          .eq('num_stocks', topN)
           .order('score', { ascending: false })
-          .limit(topN)
 
         const holdings = (selections ?? []).map((s: {
           company_id: string
