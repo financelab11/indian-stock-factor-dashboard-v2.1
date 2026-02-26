@@ -73,24 +73,34 @@ export async function POST(req: NextRequest) {
       const returnMap: Record<string, number> = {}
       returnData?.forEach(r => {
         // raw_value is usually decimal (e.g. 0.15 for 15%)
-        returnMap[r.company_id] = (r.raw_value ?? 0) * 100
+        if (r.raw_value !== null && r.raw_value !== undefined) {
+          returnMap[r.company_id] = r.raw_value * 100
+        }
       })
 
       // Calculate portfolio return (equal-weighted)
       let sumReturns = 0
-      let count = 0
+      let countWithData = 0
       const stockSelections = topStocks.map(s => {
-        const ret = returnMap[s.company_id] ?? 0 // Assume 0 if missing? Or should we ignore?
-        sumReturns += ret
-        count++
+        const hasReturn = returnMap[s.company_id] !== undefined
+        const ret = returnMap[s.company_id] ?? 0
+        
+        if (hasReturn) {
+          sumReturns += ret
+          countWithData++
+        }
+        
         return {
           company_id: s.company_id,
           score: s.final_score,
           next_year_return: ret,
+          has_return_data: hasReturn
         }
       })
 
-      const portfolioReturn = count > 0 ? sumReturns / count : 0
+      // Equal-weighted average of stocks that HAVE return data
+      // If none have data, we fall back to 0
+      const portfolioReturn = countWithData > 0 ? sumReturns / countWithData : 0
 
       // 5. Upsert portfolio_backtest
       const { error: pbErr } = await supabase
@@ -110,18 +120,19 @@ export async function POST(req: NextRequest) {
         continue
       }
 
-      // 6. Upsert portfolio_selection
+      // 6. Upsert portfolio_selection (including num_stocks)
       for (const stock of stockSelections) {
         await supabase
           .from('portfolio_selection')
           .upsert(
             {
               selection_year: selYear,
+              num_stocks: topN,
               company_id: stock.company_id,
               score: stock.score,
               next_year_return: stock.next_year_return,
             },
-            { onConflict: 'selection_year,company_id' }
+            { onConflict: 'selection_year,company_id,num_stocks' }
           )
       }
 
